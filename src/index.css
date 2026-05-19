@@ -19,13 +19,25 @@
 
 
 }
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
 /* ===== RESET ===== */
 body {
     margin: 0;
     font-family: 'Comic Neue', cursive;
     background-color: var(--bordo);
-    min-height: 100vh;
-    display: flex;
     flex-direction: column;
 }
+
+@keyframes splashIn {
+  0%   { transform: scale(0) rotate(-20deg); opacity: 0; }
+  60%  { transform: scale(1.2) rotate(10deg); opacity: 1; }
+  80%  { transform: scale(0.9) rotate(-5deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+
