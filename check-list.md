@@ -16,26 +16,26 @@
 
 ## 🧭 1. Navegación — Sidebar Fija
 
-- [ ] Sidebar lateral fija con estética de Dashboard
-- [ ] Logo del grupo integrado en la sidebar
-- [ ] Menú de navegación jerarquizado
-- [ ] Navegación implementada con React Router
+- [x] Sidebar lateral fija con estética de Dashboard
+- [x] Logo del grupo integrado en la sidebar
+- [x] Menú de navegación jerarquizado
+- [x] Navegación implementada con React Router
 
 ---
 
 ## 🏠 2. Panel Central — Dashboard Home
 
-- [ ] Grilla dinámica de tarjetas de acceso rápido
-- [ ] Cada tarjeta muestra nombre completo del integrante
-- [ ] Cada tarjeta muestra avatar (IA o mascota)
-- [ ] Animaciones de entrada implementadas
-- [ ] Transiciones suaves de carga
+- [x] Grilla dinámica de tarjetas de acceso rápido
+- [x] Cada tarjeta muestra nombre completo del integrante
+- [x] Cada tarjeta muestra avatar (IA o mascota)
+- [x] Animaciones de entrada implementadas
+- [x] Transiciones suaves de carga
 
 ---
 
 ## 👤 3. Sección Individual por Integrante
 
-- [ ] Página individual por cada integrante (React Router)
+- [x] Página individual por cada integrante (React Router)
 - [ ] Barras de progreso de habilidades animadas
 - [ ] Carrusel de proyectos con controles manuales (mínimo 3 trabajos)
 - [ ] Tech Stack con mínimo 5 iconos y efectos visuales

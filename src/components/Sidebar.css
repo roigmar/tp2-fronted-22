@@ -2,8 +2,8 @@
 .sidebar {
     width: 220px;
     min-height: 100vh;
-    background-color: var(--purpura);
-    border-right: 4px solid var(--negro);
+    background-color: var(--fondo-sidebar);
+    border-right: 2px solid var(--nude);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,10 +14,9 @@
     z-index: 1000;
     transition: transform 0.3s ease;
 }
-
 /* ===== LOGO ===== */
 .sidebar-logo img {
-    height: 100px;
+    height: 200px;
     margin-bottom: 30px;
 }
 
@@ -29,44 +28,31 @@
     width: 100%;
 }
 
-.sidebar-nav li {
-    width: 100%;
-}
-
 .sidebar-nav a {
     display: block;
     padding: 12px 20px;
-    color: var(--blanco);
+    color: var(--texto-oscuro);
     text-decoration: none;
-    font-weight: bold;
-    border-left: 4px solid transparent;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+    font-size: 0.95rem;
+    border-left: 3px solid transparent;
     transition: 0.2s;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .sidebar-nav a:hover {
-    background-color: var(--bordo);
-    border-left: 4px solid var(--rosa);
+    background-color: var(--nude);
+    border-left: 3px solid var(--dorado);
+    color: var(--texto-dorado);
 }
 
 .sidebar-nav a.active {
-    background-color: var(--bordo);
-    border-left: 4px solid var(--rosa);
-    color: var(--rosa);
-}
-
-/* ===== HAMBURGUESA ===== */
-.hamburguesa {
-    display: none;
-    position: fixed;
-    top: 15px;
-    left: 15px;
-    z-index: 2000;
-    background-color: var(--rosa);
-    border: 3px solid var(--negro);
-    box-shadow: 3px 3px 0px var(--negro);
-    font-size: 1.3rem;
-    padding: 6px 12px;
-    cursor: pointer;
+    background-color: var(--nude);
+    border-left: 3px solid var(--dorado);
+    color: var(--texto-dorado);
+    font-weight: 700;
 }
 
 /* ===== OVERLAY ===== */

@@ -1,43 +1,61 @@
 /* ===== FUENTES ===== */
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Comic+Neue:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Raleway:wght@300;400;600;700&display=swap');
 
 /* ===== VARIABLES ===== */
 
 :root {
-    --rojo: #e63946;
-    --rosa: #ff4d6d;
-    --naranja: #F08E2D;
-    --violeta: #8E2C9F;
-    --bordo: #5a0f2e;
-    --negro: #000;
-    --blanco: #fff;
-    --purpura: #19050f;
-    --fucsia: #D62369;
-    --cian: #137775;
-    --rojoOxido: #7A192A;
-    --gris: #dff2f2;
+    /* PALETA BAM-GLAM CLARA */
+    --dorado: #B8860B;
+    --dorado-claro: #D4AF37;
+    --rosa-glam: #F5A7C7;
+    --rosa-fuerte: #E91E8C;
+    --champagne: #F7E7CE;
+    --nude: #E8C9A0;
+    --plateado: #C0C0C0;
+    --blanco-perla: #FAF8FF;
+    --negro-elegante: #1A1A2E;
+    --gris-suave: #F0EEF6;
 
+    /* FONDOS */
+    --fondo-principal: #FDF6EC;
+    --fondo-sidebar: #F7E7CE;
+    --fondo-card: rgba(255, 255, 255, 0.8);
 
+    /* TEXTOS */
+    --texto-oscuro: #2C1A0E;
+    --texto-dorado: #B8860B;
 }
 #root {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
+/* ===== TIPOGRAFÍA ===== */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--dorado);
+}
 
 /* ===== RESET ===== */
 body {
     margin: 0;
-    font-family: 'Comic Neue', cursive;
-    background-color: var(--bordo);
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--fondo-principal);
+    min-height: 100vh;
+    display: flex;
     flex-direction: column;
 }
 
 @keyframes splashIn {
-  0%   { transform: scale(0) rotate(-20deg); opacity: 0; }
-  60%  { transform: scale(1.2) rotate(10deg); opacity: 1; }
-  80%  { transform: scale(0.9) rotate(-5deg); opacity: 1; }
-  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+    0%   { transform: scale(0.5); opacity: 0; filter: brightness(3) blur(8px); }
+    50%  { transform: scale(1.1); opacity: 1; filter: brightness(2) blur(2px); }
+    100% { transform: scale(1); opacity: 1; filter: brightness(1) blur(0px); }
 }
 
+@keyframes splashBrillo {
+    0%   { opacity: 0; }
+    30%  { opacity: 1; }
+    70%  { opacity: 1; }
+    100% { opacity: 0; }
+}
 

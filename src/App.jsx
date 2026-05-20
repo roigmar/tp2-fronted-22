@@ -1,6 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './components/Home'
+/*import PerfilAndrea from './components/perfiles/PerfilAndrea'
+import PerfilBeatriz from './components/perfiles/PerfilBeatriz'*/
+import PerfilMarcela from './components/perfiles/PerfilMarcela'
 
 function App() {
   return (
@@ -13,9 +16,9 @@ function App() {
           <Route path="galeria" element={<div>Galería próximamente</div>} />
           <Route path="bitacora" element={<div>Bitácora próximamente</div>} />
           <Route path="arquitectura" element={<div>Arquitectura próximamente</div>} />
-          <Route path="andrea" element={<div>Perfil Andrea próximamente</div>} />
-          <Route path="beatriz" element={<div>Perfil Beatriz próximamente</div>} />
-          <Route path="marcela" element={<div>Perfil Marcela próximamente</div>} />
+          {/* <Route path="andrea" element={<PerfilAndrea />} /> */}
+          {/* <Route path="beatriz" element={<PerfilBeatriz />} /> */}
+          <Route path="marcela" element={<PerfilMarcela />} />
         </Route>
       </Routes>
     </BrowserRouter>

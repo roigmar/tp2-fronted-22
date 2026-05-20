@@ -1,41 +1,33 @@
-import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom'
+import integrantes from '../data/integrantes'
 import './Home.css'
 
-const Hero = () => {
-    const [mostrarIntegrantes, setMostrarIntegrantes] = useState(false);
+const Home = () => {
+    const navigate = useNavigate()
+
     return (
-        <main className="index-hero">
-        <section className="index-contenido">
-            <h1 className="index-titulo">Grupo BAM</h1>
-            {/* botón hamburguesa SOLO para integrantes */}
-            <button
-                    className="index-integrantes-btn"
-                    onClick={() => setMostrarIntegrantes(!mostrarIntegrantes)}
-                >
-                    Ver integrantes ☰
-            </button>
+        <section className="home">
+            <h1 className="home-titulo">Grupo BAM GLAM</h1>
+            <p className="home-subtitulo">Seleccioná una integrante para ver su perfil</p>
 
-            <ul className={`index-integrantes ${mostrarIntegrantes ? 'activo' : ''}`}>
-                    <li><a href="#">Andrea Durán</a></li>
-                    <li><a href="#">Beatriz Gonzalez</a></li>
-                    <li><a href="#">Marcela Roig</a></li>
-            </ul>
-
-            <p className="index-descripcion">
-                En esta misión, nuestro escuadrón de desarrolladoras se propuso construir una poderosa aplicación web
-                usando HTML, CSS y JavaScript como nuestras herramientas principales. A lo largo del recorrido,
-                desplegamos habilidades especiales: navegación fluida para movernos sin fricción entre dimensiones
-                (páginas), un diseño adaptable capaz de transformarse ante cualquier dispositivo, y elementos
-                interactivos que responden a cada acción del usuario como si tuvieran vida propia. Siguiendo estrictos
-                códigos de honor —buenas prácticas de desarrollo— mantuvimos nuestro código limpio, eficiente y listo
-                para futuras batallas. En equipo, enfrentamos desafíos técnicos como verdaderos villanos, coordinando
-                estrategias, optimizando nuestro tiempo y resolviendo cada obstáculo con inteligencia colectiva hasta
-                completar con éxito la misión.
-            </p>
+            <div className="home-grid">
+                {integrantes.map((integrante) => (
+                    <div
+                        key={integrante.id}
+                        className="home-card"
+                        onClick={() => navigate(integrante.ruta)}
+                    >
+                        <img
+                            src={integrante.avatar}
+                            alt={integrante.nombre}
+                            className="home-card-avatar"
+                        />
+                        <h2 className="home-card-nombre">{integrante.nombre}</h2>
+                    </div>
+                ))}
+            </div>
         </section>
-
-    </main>
     )
 }
 
-export default Hero
+export default Home
