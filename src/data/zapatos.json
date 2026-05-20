@@ -1,0 +1,202 @@
+[
+    {
+        "id": 1,
+        "nombre": "Stiletto Dorado",
+        "marca": "Manolo Blahnik",
+        "color": "dorado",
+        "talle": 37,
+        "categoria": "tacos",
+        "ocasion": "gala",
+        "imagen": "1.png"
+    },
+    {
+        "id": 2,
+        "nombre": "Pump de Satén Negro",
+        "marca": "Jimmy Choo",
+        "color": "negro",
+        "talle": 38,
+        "categoria": "tacos",
+        "ocasion": "formal",
+        "imagen": "2.png"
+    },
+    {
+        "id": 3,
+        "nombre": "Sandalia Plateada Glitter",
+        "marca": "Stuart Weitzman",
+        "color": "plateado",
+        "talle": 36,
+        "categoria": "sandalias",
+        "ocasion": "fiesta",
+        "imagen": "3.png"
+    },
+    {
+        "id": 4,
+        "nombre": "Kitten Heel Nude",
+        "marca": "Christian Louboutin",
+        "color": "nude",
+        "talle": 37,
+        "categoria": "tacos",
+        "ocasion": "oficina",
+        "imagen": "4.png"
+    },
+    {
+        "id": 5,
+        "nombre": "Mule de Plumas Rosa",
+        "marca": "Valentino",
+        "color": "rosa",
+        "talle": 38,
+        "categoria": "mules",
+        "ocasion": "casual",
+        "imagen": "5.png"
+    },
+    {
+        "id": 6,
+        "nombre": "Flat de Perlas Blanco",
+        "marca": "Chanel",
+        "color": "blanco",
+        "talle": 36,
+        "categoria": "flats",
+        "ocasion": "casual",
+        "imagen": "6.png"
+    },
+    {
+        "id": 7,
+        "nombre": "Sandalia Terciopelo Rojo",
+        "marca": "Giuseppe Zanotti",
+        "color": "rojo",
+        "talle": 39,
+        "categoria": "sandalias",
+        "ocasion": "gala",
+        "imagen": "7.png"
+    },
+    {
+        "id": 8,
+        "nombre": "Bota Alta Rose Gold",
+        "marca": "Alexander McQueen",
+        "color": "rose gold",
+        "talle": 37,
+        "categoria": "botas",
+        "ocasion": "casual",
+        "imagen": "8.png"
+    },
+    {
+        "id": 9,
+        "nombre": "D'Orsay Verde Esmeralda",
+        "marca": "Aquazzura",
+        "color": "verde",
+        "talle": 38,
+        "categoria": "tacos",
+        "ocasion": "fiesta",
+        "imagen": "9.png"
+    },
+    {
+        "id": 10,
+        "nombre": "Sandalia Leopardo",
+        "marca": "Versace",
+        "color": "leopardo",
+        "talle": 36,
+        "categoria": "sandalias",
+        "ocasion": "casual",
+        "imagen": "10.png"
+    },
+    {
+        "id": 11,
+        "nombre": "Ankle Boot Azul Cobalto",
+        "marca": "Balenciaga",
+        "color": "azul",
+        "talle": 37,
+        "categoria": "botas",
+        "ocasion": "casual",
+        "imagen": "11.png"
+    },
+    {
+        "id": 12,
+        "nombre": "Wedge Lentejuelas Champagne",
+        "marca": "Jimmy Choo",
+        "color": "champagne",
+        "talle": 38,
+        "categoria": "wedges",
+        "ocasion": "fiesta",
+        "imagen": "12.png"
+    },
+    {
+        "id": 13,
+        "nombre": "Corset Heel Negro",
+        "marca": "Vivienne Westwood",
+        "color": "negro",
+        "talle": 36,
+        "categoria": "tacos",
+        "ocasion": "gala",
+        "imagen": "13.png"
+    },
+    {
+        "id": 14,
+        "nombre": "Mary Jane Satén Violeta",
+        "marca": "Roger Vivier",
+        "color": "violeta",
+        "talle": 37,
+        "categoria": "tacos",
+        "ocasion": "fiesta",
+        "imagen": "14.png"
+    },
+    {
+        "id": 15,
+        "nombre": "Mule Print Serpiente",
+        "marca": "Bottega Veneta",
+        "color": "serpiente",
+        "talle": 38,
+        "categoria": "mules",
+        "ocasion": "casual",
+        "imagen": "15.png"
+    },
+    {
+        "id": 16,
+        "nombre": "Sneaker Dorado con Perlas",
+        "marca": "Gucci",
+        "color": "dorado",
+        "talle": 37,
+        "categoria": "sneakers",
+        "ocasion": "casual",
+        "imagen": "16.png"
+    },
+    {
+        "id": 17,
+        "nombre": "Heel Bordado Marfil",
+        "marca": "Marchesa",
+        "color": "marfil",
+        "talle": 36,
+        "categoria": "tacos",
+        "ocasion": "novia",
+        "imagen": "17.png"
+    },
+    {
+        "id": 18,
+        "nombre": "Loafer Patent Rosa",
+        "marca": "Prada",
+        "color": "rosa",
+        "talle": 38,
+        "categoria": "flats",
+        "ocasion": "oficina",
+        "imagen": "18.png"
+    },
+    {
+        "id": 19,
+        "nombre": "Sandalia Cota de Malla Plateada",
+        "marca": "Versace",
+        "color": "plateado",
+        "talle": 37,
+        "categoria": "sandalias",
+        "ocasion": "gala",
+        "imagen": "19.png"
+    },
+    {
+        "id": 20,
+        "nombre": "Stiletto Plumas Negro",
+        "marca": "Tom Ford",
+        "color": "negro",
+        "talle": 38,
+        "categoria": "tacos",
+        "ocasion": "gala",
+        "imagen": "20.png"
+    }
+]
