@@ -36,19 +36,19 @@
 ## 👤 3. Sección Individual por Integrante
 
 - [x] Página individual por cada integrante (React Router)
-- [ ] Barras de progreso de habilidades animadas
-- [ ] Carrusel de proyectos con controles manuales (mínimo 3 trabajos)
-- [ ] Tech Stack con mínimo 5 iconos y efectos visuales
-- [ ] Botones de redes sociales con efectos hover (color/escalado)
+- [x] Barras de progreso de habilidades animadas
+- [x] Carrusel de proyectos con controles manuales (mínimo 3 trabajos)
+- [x] Tech Stack con mínimo 5 iconos y efectos visuales
+- [x] Botones de redes sociales con efectos hover (color/escalado)
 
 ---
 
 ## 📊 4. Explorador de Datos — JSON Local
 
-- [ ] Archivo JSON con 20 objetos creado
-- [ ] Renderización dinámica del JSON en React
-- [ ] Buscador por texto en tiempo real
-- [ ] Filtrado que actualiza la vista dinámicamente
+- [x] Archivo JSON con 20 objetos creado
+- [x] Renderización dinámica del JSON en React
+- [x] Buscador por texto en tiempo real
+- [x] Filtrado que actualiza la vista dinámicamente
 
 ---
 
