@@ -3,6 +3,7 @@ import Layout from './components/Layout'
 import Home from './components/Home'
 import Explorador from './components/Explorador'
 import Perfil from './components/Perfil'
+import Api from './components/Api'
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="explorador" element={<Explorador />} />
-          <Route path="api" element={<div>API próximamente</div>} />
+          <Route path="api" element={<Api />} />
           <Route path="galeria" element={<div>Galería próximamente</div>} />
           <Route path="bitacora" element={<div>Bitácora próximamente</div>} />
           <Route path="arquitectura" element={<div>Arquitectura próximamente</div>} />

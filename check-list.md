@@ -7,7 +7,7 @@
 
 ## 📦 Entrega
 
-- [ ] Repositorio creado e independiente del TP1
+- [x] Repositorio creado e independiente del TP1
 - [ ] Link al repositorio publicado en la planilla de la comisión
 - [ ] Link al deploy en Vercel publicado en la planilla de la comisión
 - [ ] README.md completo (ver sección específica)
@@ -54,11 +54,11 @@
 
 ## 🌐 5. Integración de API Externa
 
-- [ ] Consumo asíncrono de una API pública
-- [ ] Estado de carga (loading) implementado
-- [ ] Estado de error implementado
-- [ ] Sistema de paginación (Anterior/Siguiente)
-- [ ] Indicador de posición actual en la paginación
+- [x] Consumo asíncrono de una API pública
+- [x] Estado de carga (loading) implementado
+- [x] Estado de error implementado
+- [x] Sistema de paginación (Anterior/Siguiente)
+- [x] Indicador de posición actual en la paginación
 
 ---
 
