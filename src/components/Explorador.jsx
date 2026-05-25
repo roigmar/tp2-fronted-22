@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import zapatos from '../data/zapatos.json'
 import './Explorador.css'
+import ProductCard from './ProductCard'
+import Button from './Button'
 
 const Explorador = () => {
     const [busqueda, setBusqueda] = useState('')
@@ -35,13 +37,13 @@ const Explorador = () => {
 
                 <div className="explorador-filtros">
                     {categorias.map(cat => (
-                        <button
+                        <Button
                             key={cat}
-                            className={`filtro-btn ${filtroCategoria === cat ? 'activo' : ''}`}
+                            isActive={filtroCategoria === cat}
                             onClick={() => setFiltroCategoria(cat)}
                         >
                             {cat}
-                        </button>
+                        </Button>
                     ))}
                 </div>
             </div>
@@ -50,20 +52,13 @@ const Explorador = () => {
             <div className="explorador-grid">
                 {resultados.length > 0 ? (
                     resultados.map(zapato => (
-                        <div key={zapato.id} className="zapato-card">
-                            <img
-                                src={`/src/assets/shoes/${zapato.imagen}`}
-                                alt={zapato.nombre}
-                                className="zapato-img"
+                        <div key={zapato.id}>
+                            <ProductCard
+                                imagenUrl={`/src/assets/shoes/${zapato.imagen}`}
+                                nombre={zapato.nombre}
+                                subtitulo={zapato.marca}
+                                detalles={[zapato.categoria, zapato.ocasion]}
                             />
-                            <div className="zapato-info">
-                                <h3 className="zapato-nombre">{zapato.nombre}</h3>
-                                <p className="zapato-marca">{zapato.marca}</p>
-                                <div className="zapato-detalles">
-                                    <span className="zapato-badge">{zapato.categoria}</span>
-                                    <span className="zapato-badge">{zapato.ocasion}</span>
-                                </div>
-                            </div>
                         </div>
                     ))
                 ) : (
