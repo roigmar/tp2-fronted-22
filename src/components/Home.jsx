@@ -7,7 +7,7 @@ const Home = () => {
 
     return (
         <section className="home">
-            <h1 className="home-titulo">Grupo BAM GLAM</h1>
+            <h1 className="home-titulo">Bienvenido/a</h1>
             <p className="home-subtitulo">Seleccioná una integrante para ver su perfil</p>
 
             <div className="home-grid">
