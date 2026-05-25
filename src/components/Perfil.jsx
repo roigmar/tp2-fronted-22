@@ -63,15 +63,6 @@ const Perfil = () => {
                             />
                             <h3>{integrante.proyectos[indice].titulo}</h3>
                             <p>{integrante.proyectos[indice].descripcion}</p>
-                            
-                                <a
-                                href={integrante.proyectos[indice].link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="carrusel-link"
-                            >
-                                Ver proyecto
-                            </a>
                         </div>
                         <button className="carrusel-btn" onClick={siguiente}>→</button>
                     </div>
