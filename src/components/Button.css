@@ -1,0 +1,33 @@
+/* ===== REUSABLE GLAM BUTTON ===== */
+.glam-btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 1px solid var(--nude);
+    background-color: var(--blanco-perla);
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--texto-oscuro);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.glam-btn:hover:not(:disabled) {
+    background: linear-gradient(135deg, var(--dorado), var(--dorado-claro));
+    border-color: var(--dorado);
+    color: var(--negro-elegante);
+}
+
+.glam-btn.activo {
+    background: linear-gradient(135deg, var(--dorado), var(--dorado-claro));
+    border-color: var(--dorado);
+    color: var(--negro-elegante);
+    font-weight: 700;
+}
+
+.glam-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
