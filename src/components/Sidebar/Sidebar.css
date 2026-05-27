@@ -76,9 +76,7 @@
         transform: translateX(0);
     }
 
-    .hamburguesa {
-        display: block;
-    }
+
 
     .sidebar-overlay {
         display: block;
