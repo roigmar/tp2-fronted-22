@@ -237,6 +237,9 @@
 }
 
 .tech-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     padding: 8px 18px;
     border-radius: 25px;
     background: linear-gradient(135deg, var(--dorado), var(--dorado-claro));
@@ -247,6 +250,11 @@
     letter-spacing: 1px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     cursor: default;
+}
+
+.tech-icon {
+    width: 20px;
+    height: 20px;
 }
 
 .tech-badge:hover {

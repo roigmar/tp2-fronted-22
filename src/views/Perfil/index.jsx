@@ -14,6 +14,26 @@ const Perfil = () => {
     const anterior = () => setIndice(prev => prev === 0 ? integrante.proyectos.length - 1 : prev - 1)
     const siguiente = () => setIndice(prev => prev === integrante.proyectos.length - 1 ? 0 : prev + 1)
 
+    const getTechIcon = (tech) => {
+        const deviconUrls = {
+            'HTML': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
+            'CSS': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
+            'JavaScript': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
+            'React': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
+            'Git': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg',
+            'Python': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg',
+            'Kotlin': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg',
+            'Figma': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg',
+            'MySQL': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg',
+            'Node.js': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg',
+            'Java': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg',
+            'Vue': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg',
+            'MongoDB': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg',
+            'Cobol': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cobol/cobol-original.svg',
+        };
+        return deviconUrls[tech] || null;
+    }
+
     return (
         <section className="perfil">
 
@@ -83,7 +103,10 @@ const Perfil = () => {
                 <h2 className="perfil-subtitulo">Tech Stack</h2>
                 <div className="tech-stack">
                     {integrante.techStack.map(tech => (
-                        <span key={tech} className="tech-badge">{tech}</span>
+                        <span key={tech} className="tech-badge">
+                            {getTechIcon(tech) && <img src={getTechIcon(tech)} alt={tech} className="tech-icon" />}
+                            {tech}
+                        </span>
                     ))}
                 </div>
             </div>

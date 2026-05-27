@@ -20,7 +20,7 @@ const integrantes = [
         rol: "Desarrolladora Web",
         redes: {
             github: "https://github.com/andreaduran1",
-            linkedin: "#"
+            linkedin: "https://linkedin.com"
         },
         habilidades: [
             { nombre: 'HTML', nivel: 80 },
@@ -31,10 +31,11 @@ const integrantes = [
             { nombre: 'Figma', nivel: 90 },
             { nombre: 'Java', nivel: 80 },
             { nombre: 'Vue', nivel: 92 },
+            { nombre: 'Kotlin', nivel: 50 },
+            { nombre: 'Node.js', nivel: 60 },
             { nombre: 'MySQL', nivel: 60 },
             { nombre: 'MongoDB', nivel: 40 },
             { nombre: 'Trello', nivel: 85 },
-            { nombre: 'Node.js', nivel: 60 },
             { nombre: 'Azure DevOps', nivel: 70 },
         ],
         proyectos: [
@@ -43,7 +44,7 @@ const integrantes = [
             { id: 3, titulo: 'Portafolio', descripcion: 'Desarrollo de una Landing Page de Portafolio Personal utilizando HTML5 y CSS3 puros. Este proyecto tiene como objetivo aplicar estructuras semánticas, integración de fuentes externas (Google Fonts), manejo de layouts mediante Flexbox o Grid, y asegurar que el diseño sea responsivo y accesible.', imagen: proyectoAn3, link: '#' },
             { id: 4, titulo: 'AforoTag', descripcion: 'Aplicación web enfocada en la gestión interactiva, escaneo de accesos y recolección de Leads para eventos presenciales. Dispone de una arquitectura Mobile-First construida y optimizada bajo el ecosistema de ReactJS.', imagen: proyectoAn4, link: '#' }
         ],
-        techStack: ['HTML', 'CSS', 'JavaScript', 'React', 'Git']
+        techStack: ['HTML', 'CSS', 'JavaScript', 'React', 'Git','Java', 'Vue', 'MySQL', 'MongoDB','Node.js', 'Kotlin']
     },
     {
         id: 2,
