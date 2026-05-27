@@ -143,25 +143,31 @@
 }
 
 .carrusel-card {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     padding: 25px;
     background: linear-gradient(145deg, var(--blanco-perla), var(--champagne));
     border: 1px solid var(--nude);
     border-radius: 16px;
     box-shadow: 0 4px 15px rgba(212, 175, 55, 0.15);
     text-align: center;
+    box-sizing: border-box;
 }
 .carrusel-img {
-    width: 100%;
+    width: fit-content;
     height: 150px;
     object-fit: contain;
     border-radius: 8px;
     margin-bottom: 15px;
-    transition: transform 0.3s ease;                       
+    transition: transform 0.3s ease, box-shadow 0.3s ease, z-index 0s;
+    position: relative;
+    z-index: 1;
 }
 
 .carrusel-img:hover {
     transform: scale(2.05);
+    z-index: 999;
+    box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.7);
 }
 
 
@@ -251,12 +257,15 @@
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     .perfil {
-        padding: 20px;
+        padding: 15px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .perfil-header {
         flex-direction: column;
         text-align: center;
+        padding: 20px 15px;
     }
 
     .perfil-redes {
@@ -265,5 +274,19 @@
 
     .perfil-nombre {
         font-size: 1.8rem;
+    }
+
+    .carrusel-controles {
+        gap: 10px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .carrusel-card {
+        padding: 15px;
+    }
+
+    .carrusel-img {
+        height: 120px;
     }
 }
