@@ -4,6 +4,7 @@ import Home from './views/Home'
 import Explorador from './views/Explorador'
 import Perfil from './views/Perfil'
 import Api from './views/Api'
+import Galeria from './views/Galeria'
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="explorador" element={<Explorador />} />
           <Route path="api" element={<Api />} />
-          <Route path="galeria" element={<div>Galería próximamente</div>} />
+          <Route path="galeria" element={<Galeria />} />
           <Route path="bitacora" element={<div>Bitácora próximamente</div>} />
           <Route path="arquitectura" element={<div>Arquitectura próximamente</div>} />
           <Route path=":nombre" element={<Perfil />} />
