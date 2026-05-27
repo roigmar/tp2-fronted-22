@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import zapatos from '../data/zapatos.json'
+import zapatos from '../../data/zapatos.json'
 import './Explorador.css'
-import ProductCard from './ProductCard'
-import Button from './Button'
+import ProductCard from '../../components/ProductCard'
+import Button from '../../components/Button'
 
 const Explorador = () => {
     const [busqueda, setBusqueda] = useState('')

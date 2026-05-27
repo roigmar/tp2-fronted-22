@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import logo from '../assets/logo-GlamSF.png'
+import logo from '../../assets/logo-GlamSF.png'
 import './Sidebar.css'
 
 const Sidebar = ({ abierta, cerrar }) => {

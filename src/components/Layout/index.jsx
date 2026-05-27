@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Outlet } from 'react-router-dom'
-import Sidebar from './Sidebar'
-import logo from '../assets/logo-GlamSF.png'
+import Sidebar from '../Sidebar'
+import logo from '../../assets/logo-GlamSF.png'
 import './Layout.css'
 
 const Layout = () => {

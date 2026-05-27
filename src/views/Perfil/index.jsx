@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom'
 import { useState } from 'react'
-import integrantes from '../data/integrantes'
+import integrantes from '../../data/integrantes'
 import './Perfil.css'
 
 const Perfil = () => {

@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import integrantes from '../data/integrantes'
+import integrantes from '../../data/integrantes'
 import './Home.css'
 
 const Home = () => {

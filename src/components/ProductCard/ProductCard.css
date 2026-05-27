@@ -1,4 +1,3 @@
-/* ===== PRODUCT CARD ===== */
 .product-card {
     background: linear-gradient(145deg, var(--blanco-perla), var(--champagne));
     border: 1px solid var(--nude);
@@ -90,5 +89,5 @@
     font-size: 1.2rem;
     color: var(--dorado);
     font-weight: bold;
-    margin: auto 0 0 0; /* Empuja el precio al final si hay espacio vertical */
+    margin: auto 0 0 0;
 }

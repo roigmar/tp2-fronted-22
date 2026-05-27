@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from './components/Layout'
-import Home from './components/Home'
-import Explorador from './components/Explorador'
-import Perfil from './components/Perfil'
-import Api from './components/Api'
+import Home from './views/Home'
+import Explorador from './views/Explorador'
+import Perfil from './views/Perfil'
+import Api from './views/Api'
 
 function App() {
   return (

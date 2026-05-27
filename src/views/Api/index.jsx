@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import './Api.css'
-import ProductCard from './ProductCard'
-import Button from './Button'
+import ProductCard from '../../components/ProductCard'
+import Button from '../../components/Button'
 
 const Api = () => {
     const [productos, setProductos] = useState([])
