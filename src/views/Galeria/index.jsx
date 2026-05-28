@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import zapatosData from '../../data/zapatos.json';
+import capitalesData from '../../data/capitales.json';
 import './Galeria.css';
 
 
@@ -16,12 +16,12 @@ const Galeria = () => {
 
     const prevImage = (e) => {
         e.stopPropagation();
-        setIndiceActual((prev) => (prev === 0 ? zapatosData.length - 1 : prev - 1));
+        setIndiceActual((prev) => (prev === 0 ? capitalesData.length - 1 : prev - 1));
     };
 
     const nextImage = (e) => {
         e.stopPropagation();
-        setIndiceActual((prev) => (prev === zapatosData.length - 1 ? 0 : prev + 1));
+        setIndiceActual((prev) => (prev === capitalesData.length - 1 ? 0 : prev + 1));
     };
 
     // Manejar tecla ESC y Flechas
@@ -49,19 +49,20 @@ const Galeria = () => {
 
     return (
         <section className="galeria-contenedor">
-            <h1 className="galeria-titulo">Colección Exclusiva</h1>
+            <h1 className="galeria-titulo">✦ Diario de Viaje ✦</h1>
+            <p className="galeria-subtitulo">Recorrido por las capitales del mundo</p>
             
             {/* GRID DE IMÁGENES */}
             <div className="galeria-grid">
-                {zapatosData.map((zapato, index) => (
+                {capitalesData.map((capital, index) => (
                     <div 
-                        key={zapato.id} 
+                        key={capital.id} 
                         className="galeria-item" 
                         onClick={() => abrirLightbox(index)}
                     >
                         <img 
-                            src={`/src/assets/shoes/${zapato.imagen}`} 
-                            alt={zapato.nombre} 
+                            src={`/src/assets/capitales/${capital.imagen}`} 
+                            alt={capital.nombre} 
                             loading="lazy"
                         />
                         <div className="galeria-item-overlay">
@@ -80,13 +81,13 @@ const Galeria = () => {
                     
                     <div className="lightbox-contenido" onClick={(e) => e.stopPropagation()}>
                         <img 
-                            src={`/src/assets/shoes/${zapatosData[indiceActual].imagen}`}
-                            alt={zapatosData[indiceActual].nombre}
+                            src={`/src/assets/capitales/${capitalesData[indiceActual].imagen}`}
+                            alt={capitalesData[indiceActual].nombre}
                             className="lightbox-img" 
                         />
                         <div className="lightbox-info">
-                            <h2>{zapatosData[indiceActual].nombre}</h2>
-                            <p>{zapatosData[indiceActual].marca} - {zapatosData[indiceActual].color}</p>
+                            <h2>{capitalesData[indiceActual].nombre}</h2>
+                            <p>{capitalesData[indiceActual].pais} - {capitalesData[indiceActual].fecha}</p>
                         </div>
                     </div>
 

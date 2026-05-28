@@ -1,0 +1,88 @@
+[
+    {
+        "id": 1,
+        "nombre": "Nueva York",
+        "pais": "Estados Unidos",
+        "fecha": "Diciembre 2023",
+        "imagen": "NY.png"
+    },
+    {
+        "id": 2,
+        "nombre": "Paris",
+        "pais": "Francia",
+        "fecha": "Enero 2024",
+        "imagen": "paris.png"
+    },
+    {
+        "id": 3,
+        "nombre": "Roma",
+        "pais": "Italia",
+        "fecha": "Febrero 2024",
+        "imagen": "roma.png"
+    },
+    {
+        "id": 4,
+        "nombre": "Tokio",
+        "pais": "Japón",
+        "fecha": "Marzo 2024",
+        "imagen": "tokio.png"
+    },
+    {
+        "id": 5,
+        "nombre": "Londres",
+        "pais": "Reino Unido",
+        "fecha": "Abril 2024",
+        "imagen": "londres.png"
+    },
+    {
+        "id": 6,
+        "nombre": "Dubai",
+        "pais": "Emiratos Árabes Unidos",
+        "fecha": "Mayo 2024",
+        "imagen": "dubai.png"
+    },
+    {
+        "id": 7,
+        "nombre": "Praga",
+        "pais": "República Checa",
+        "fecha": "Junio 2024",
+        "imagen": "praga.png"
+    },
+    {
+        "id": 8,
+        "nombre": "Estambul",
+        "pais": "Turquía",
+        "fecha": "Julio 2024",
+        "imagen": "estambul.png"
+    },
+    
+    {
+        "id": 9,
+        "nombre": "Amsterdam",
+        "pais": "Países Bajos",
+        "fecha": "Agosto 2024",       
+        "imagen": "amsterdam.png"
+    },
+    {
+        "id": 10,
+        "nombre": "Sídney",
+        "pais": "Australia",
+        "fecha": "Septiembre 2024",
+        "imagen": "sidney.png"
+    },
+    {
+        "id": 11,
+        "nombre": "Barcelona",
+        "pais": "España",
+        "fecha": "Octubre 2024",
+        "imagen": "barcelona.png"
+    },
+    {
+        "id": 12,
+        "nombre": "Buenos Aires",
+        "pais": "Argentina",
+        "fecha": "Noviembre 2024",
+        "imagen": "buenosaires.png"
+    }   
+    
+]

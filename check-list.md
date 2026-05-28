@@ -114,4 +114,4 @@
 ## 🚀 Deploy
 
 - [ ] Proyecto desplegado en Vercel
-- [ ] Deploy funciona correctamente en producción
+- [ ] Deploy funciona correctamente en producción  
