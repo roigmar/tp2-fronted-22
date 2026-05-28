@@ -1,0 +1,207 @@
+.arquitectura {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.arquitectura-titulo {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: var(--dorado);
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.arquitectura-subtitulo {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--texto-oscuro);
+    opacity: 0.6;
+    margin-bottom: 30px;
+}
+
+/* ===== LEYENDA ===== */
+.leyenda {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.leyenda-item {
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* ===== ÁRBOL ===== */
+.arbol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+}
+
+.arbol-nivel {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 20px 0;
+}
+
+.arbol-nivel::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 20px;
+    background-color: var(--dorado);
+    transform: translateX(-50%);
+}
+
+.arbol-nivel:first-child::before {
+    display: none;
+}
+
+.arbol-nivel::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    background-color: var(--dorado);
+    width: calc(100% - 80px);
+}
+
+.arbol-nivel:first-child::after,
+.arbol-nivel:nth-child(2)::after {
+    display: none;
+}
+
+/* ===== NODOS ===== */
+.nodo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    z-index: 1;
+    min-width: 110px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nodo:hover {
+    transform: translateY(-4px);
+}
+
+.nodo-nombre {
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.nodo-badge {
+    font-size: 0.65rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+/* ===== COLORES POR TIPO ===== */
+.nodo.raiz {
+    background: linear-gradient(135deg, var(--dorado), var(--dorado-claro));
+    color: var(--negro-elegante);
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+    min-width: 130px;
+}
+
+.nodo.raiz:hover {
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
+}
+
+.nodo.vista {
+    background: linear-gradient(135deg, var(--rosa-glam), #f8c8da);
+    color: var(--negro-elegante);
+    box-shadow: 0 4px 10px rgba(245, 167, 199, 0.3);
+    border: 1px solid var(--rosa-fuerte);
+}
+
+.nodo.vista:hover {
+    box-shadow: 0 8px 20px rgba(245, 167, 199, 0.5);
+}
+
+.nodo.componente {
+    background: linear-gradient(135deg, #e8e8f0, var(--blanco-perla));
+    color: var(--negro-elegante);
+    border: 1px solid var(--plateado);
+    box-shadow: 0 4px 10px rgba(192, 192, 192, 0.2);
+}
+
+.nodo.componente:hover {
+    box-shadow: 0 8px 20px rgba(192, 192, 192, 0.4);
+}
+
+.nodo.dato {
+    background: linear-gradient(135deg, var(--champagne), var(--nude));
+    color: var(--negro-elegante);
+    border: 1px solid var(--dorado-claro);
+    box-shadow: 0 4px 10px rgba(212, 175, 55, 0.15);
+}
+
+.nodo.dato:hover {
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+}
+
+/* ===== LEYENDA COLORES ===== */
+.leyenda-item.raiz {
+    background: linear-gradient(135deg, var(--dorado), var(--dorado-claro));
+    color: var(--negro-elegante);
+}
+
+.leyenda-item.vista {
+    background: linear-gradient(135deg, var(--rosa-glam), #f8c8da);
+    color: var(--negro-elegante);
+    border: 1px solid var(--rosa-fuerte);
+}
+
+.leyenda-item.componente {
+    background: linear-gradient(135deg, #e8e8f0, var(--blanco-perla));
+    color: var(--negro-elegante);
+    border: 1px solid var(--plateado);
+}
+
+.leyenda-item.dato {
+    background: linear-gradient(135deg, var(--champagne), var(--nude));
+    color: var(--negro-elegante);
+    border: 1px solid var(--dorado-claro);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .arquitectura {
+        padding: 20px;
+    }
+
+    .arquitectura-titulo {
+        font-size: 2rem;
+    }
+
+    .nodo {
+        min-width: 90px;
+        padding: 10px 14px;
+    }
+}
