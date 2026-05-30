@@ -54,7 +54,7 @@ const Explorador = () => {
                     resultados.map(zapato => (
                         <div key={zapato.id}>
                             <ProductCard
-                                imagenUrl={`/src/assets/shoes/${zapato.imagen}`}
+                                imagenUrl={`/shoes/${zapato.imagen}`}
                                 nombre={zapato.nombre}
                                 subtitulo={zapato.marca}
                                 detalles={[zapato.categoria, zapato.ocasion]}
