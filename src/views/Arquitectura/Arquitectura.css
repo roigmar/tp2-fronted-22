@@ -9,24 +9,26 @@
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
     color: var(--dorado);
-    letter-spacing: 3px;
-    margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
 }
 
 .arquitectura-subtitulo {
     font-family: 'Raleway', sans-serif;
+    text-align: center;
     letter-spacing: 3px;
     text-transform: uppercase;
     color: var(--texto-oscuro);
     opacity: 0.6;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 /* ===== LEYENDA ===== */
 .leyenda {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
     margin-bottom: 50px;
     flex-wrap: wrap;
 }
@@ -81,90 +83,79 @@
     transform: translateX(-50%);
     height: 2px;
     background-color: var(--dorado);
-    width: calc(100% - 80px);
+    width: calc(100% - 150px);
 }
 
-.arbol-nivel:first-child::after,
-.arbol-nivel:nth-child(2)::after {
-    display: none;
+/* ===== RAMAS (VISTAS) ===== */
+.arbol-ramas-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    position: relative;
+    flex-wrap: nowrap;
 }
 
-/* ===== NODOS ===== */
-.nodo {
+.arbol-ramas-container::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    background-color: var(--dorado);
+    width: calc(100% - 150px);
+}
+
+.arbol-rama {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
-    padding: 12px 20px;
-    border-radius: 12px;
-    font-family: 'Raleway', sans-serif;
     position: relative;
-    z-index: 1;
-    min-width: 110px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding-top: 20px;
 }
 
-.nodo:hover {
-    transform: translateY(-4px);
+.arbol-rama::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 20px;
+    background-color: var(--dorado);
+    transform: translateX(-50%);
 }
 
-.nodo-nombre {
-    font-weight: 700;
-    font-size: 0.9rem;
-    letter-spacing: 0.5px;
+.arbol-rama:first-child::before,
+.arbol-rama:nth-child(2)::before,
+.arbol-rama:nth-child(3)::before,
+.arbol-rama:nth-child(5)::before,
+.arbol-rama:nth-child(6)::before,
+.arbol-rama:nth-child(7)::before {
+    display: none;
 }
 
-.nodo-badge {
-    font-size: 0.65rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    opacity: 0.7;
+.arbol-hijos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    padding-top: 20px;
 }
 
-/* ===== COLORES POR TIPO ===== */
-.nodo.raiz {
-    background: linear-gradient(135deg, var(--dorado), var(--dorado-claro));
-    color: var(--negro-elegante);
-    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
-    min-width: 130px;
+.arbol-hijos::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 20px;
+    background-color: var(--dorado);
+    transform: translateX(-50%);
 }
 
-.nodo.raiz:hover {
-    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
-}
 
-.nodo.vista {
-    background: linear-gradient(135deg, var(--rosa-glam), #f8c8da);
-    color: var(--negro-elegante);
-    box-shadow: 0 4px 10px rgba(245, 167, 199, 0.3);
-    border: 1px solid var(--rosa-fuerte);
-}
-
-.nodo.vista:hover {
-    box-shadow: 0 8px 20px rgba(245, 167, 199, 0.5);
-}
-
-.nodo.componente {
-    background: linear-gradient(135deg, #e8e8f0, var(--blanco-perla));
-    color: var(--negro-elegante);
-    border: 1px solid var(--plateado);
-    box-shadow: 0 4px 10px rgba(192, 192, 192, 0.2);
-}
-
-.nodo.componente:hover {
-    box-shadow: 0 8px 20px rgba(192, 192, 192, 0.4);
-}
-
-.nodo.dato {
-    background: linear-gradient(135deg, var(--champagne), var(--nude));
-    color: var(--negro-elegante);
-    border: 1px solid var(--dorado-claro);
-    box-shadow: 0 4px 10px rgba(212, 175, 55, 0.15);
-}
-
-.nodo.dato:hover {
-    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
-}
 
 /* ===== LEYENDA COLORES ===== */
 .leyenda-item.raiz {
@@ -198,10 +189,5 @@
 
     .arquitectura-titulo {
         font-size: 2rem;
-    }
-
-    .nodo {
-        min-width: 90px;
-        padding: 10px 14px;
     }
 }

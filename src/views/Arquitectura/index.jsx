@@ -1,10 +1,11 @@
+import RenderNode from '../../components/RenderNode'
 import './Arquitectura.css'
 
 const Arquitectura = () => {
     return (
         <section className="arquitectura">
-            <h1 className="arquitectura-titulo">✦ Árbol de Renderizado ✦</h1>
-            <p className="arquitectura-subtitulo">Arquitectura de componentes</p>
+            <h1 className="arquitectura-titulo">✦ Arquitectura ✦</h1>
+            <p className="arquitectura-subtitulo">Árbol de Renderizado</p>
 
             {/* LEYENDA */}
             <div className="leyenda">
@@ -18,110 +19,85 @@ const Arquitectura = () => {
 
                 {/* NIVEL 0 — RAÍZ */}
                 <div className="arbol-nivel">
-                    <div className="nodo raiz">
-                        <span className="nodo-nombre">App</span>
-                        <span className="nodo-badge">raíz</span>
-                    </div>
+                    <RenderNode tipo="raiz" nombre="App" badge="raíz" />
                 </div>
 
-                {/* NIVEL 1 */}
+                {/* NIVEL 1 — ESTRUCTURA PRINCIPAL */}
                 <div className="arbol-nivel">
-                    <div className="nodo raiz">
-                        <span className="nodo-nombre">Layout</span>
-                        <span className="nodo-badge">raíz</span>
-                    </div>
+                    <RenderNode tipo="componente" nombre="Layout" badge="superior" />
                 </div>
 
-                {/* NIVEL 2 */}
+                {/* NIVEL 2 — INTERIOR DEL LAYOUT */}
                 <div className="arbol-nivel">
-                    <div className="nodo componente">
-                        <span className="nodo-nombre">Sidebar</span>
-                        <span className="nodo-badge">componente</span>
-                    </div>
-                    <div className="nodo componente">
-                        <span className="nodo-nombre">Outlet</span>
-                        <span className="nodo-badge">router</span>
-                    </div>
-                    <div className="nodo componente">
-                        <span className="nodo-nombre">Button</span>
-                        <span className="nodo-badge">componente</span>
-                    </div>
+                    <RenderNode tipo="componente" nombre="Sidebar" badge="superior" />
+                    <RenderNode tipo="componente" nombre="Outlet" badge="router" />
                 </div>
 
-                {/* NIVEL 3 — VISTAS */}
-                <div className="arbol-nivel">
-                    <div className="nodo vista">
-                        <span className="nodo-nombre">Home</span>
-                        <span className="nodo-badge">vista</span>
+                {/* RAMAS — VISTAS CON SUS HIJOS */}
+                <div className="arbol-ramas-container">
+                    
+                    {/* RAMA HOME */}
+                    <div className="arbol-rama">
+                        <RenderNode tipo="vista" nombre="Home" badge="vista" />
+                        <div className="arbol-hijos">
+                            <RenderNode tipo="dato" nombre="integrantes.js" badge="data" />
+                        </div>
                     </div>
-                    <div className="nodo vista">
-                        <span className="nodo-nombre">Perfil</span>
-                        <span className="nodo-badge">vista</span>
-                    </div>
-                    <div className="nodo vista">
-                        <span className="nodo-nombre">Explorador</span>
-                        <span className="nodo-badge">vista</span>
-                    </div>
-                    <div className="nodo vista">
-                        <span className="nodo-nombre">Api</span>
-                        <span className="nodo-badge">vista</span>
-                    </div>
-                    <div className="nodo vista">
-                        <span className="nodo-nombre">Galería</span>
-                        <span className="nodo-badge">vista</span>
-                    </div>
-                    <div className="nodo vista">
-                        <span className="nodo-nombre">Bitácora</span>
-                        <span className="nodo-badge">vista</span>
-                    </div>
-                </div>
 
-                {/* NIVEL 4 — COMPONENTES HIJOS */}
-                <div className="arbol-nivel">
-                    <div className="nodo componente">
-                        <span className="nodo-nombre">ProductCard</span>
-                        <span className="nodo-badge">componente</span>
+                    {/* RAMA EXPLORADOR */}
+                    <div className="arbol-rama">
+                        <RenderNode tipo="vista" nombre="Explorador" badge="vista" />
+                        <div className="arbol-hijos">
+                            <RenderNode tipo="dato" nombre="zapatos.json" badge="data" />
+                            <RenderNode tipo="componente" nombre="ProductCard" badge="hijo" />
+                            <RenderNode tipo="componente" nombre="Button" badge="hijo" />
+                        </div>
                     </div>
-                    <div className="nodo componente">
-                        <span className="nodo-nombre">Barras</span>
-                        <span className="nodo-badge">componente</span>
-                    </div>
-                    <div className="nodo componente">
-                        <span className="nodo-nombre">Carrusel</span>
-                        <span className="nodo-badge">componente</span>
-                    </div>
-                    <div className="nodo componente">
-                        <span className="nodo-nombre">Tech Stack</span>
-                        <span className="nodo-badge">componente</span>
-                    </div>
-                    <div className="nodo componente">
-                        <span className="nodo-nombre">Buscador</span>
-                        <span className="nodo-badge">componente</span>
-                    </div>
-                    <div className="nodo componente">
-                        <span className="nodo-nombre">Filtros</span>
-                        <span className="nodo-badge">componente</span>
-                    </div>
-                    <div className="nodo componente">
-                        <span className="nodo-nombre">Lightbox</span>
-                        <span className="nodo-badge">componente</span>
-                    </div>
-                </div>
 
-                {/* NIVEL 5 — DATA */}
-                <div className="arbol-nivel">
-                    <div className="nodo dato">
-                        <span className="nodo-nombre">integrantes.js</span>
-                        <span className="nodo-badge">data</span>
+                    {/* RAMA API */}
+                    <div className="arbol-rama">
+                        <RenderNode tipo="vista" nombre="Api" badge="vista" />
+                        <div className="arbol-hijos">
+                            <RenderNode tipo="dato" nombre="Fetch (API)" badge="data" />
+                            <RenderNode tipo="componente" nombre="ProductCard" badge="hijo" />
+                            <RenderNode tipo="componente" nombre="Button" badge="hijo" />
+                        </div>
                     </div>
-                    <div className="nodo dato">
-                        <span className="nodo-nombre">zapatos.json</span>
-                        <span className="nodo-badge">data</span>
+
+                    {/* RAMA GALERÍA */}
+                    <div className="arbol-rama">
+                        <RenderNode tipo="vista" nombre="Galería" badge="vista" />
+                        <div className="arbol-hijos">
+                            <RenderNode tipo="dato" nombre="capitales.json" badge="data" />
+                            <RenderNode tipo="componente" nombre="Lightbox" badge="hijo" />
+                        </div>
                     </div>
-                    <div className="nodo dato">
-                        <span className="nodo-nombre">capitales.json</span>
-                        <span className="nodo-badge">data</span>
+
+                    {/* RAMA PERFIL */}
+                    <div className="arbol-rama">
+                        <RenderNode tipo="vista" nombre="Perfil" badge="vista" />
+                        <div className="arbol-hijos">
+                            <RenderNode tipo="dato" nombre="integrantes.js" badge="data" />
+                            <RenderNode tipo="dato" nombre="techIcons.js" badge="data" />
+                            <RenderNode tipo="componente" nombre="Carrusel" badge="hijo" />
+                            <RenderNode tipo="componente" nombre="SkillBar" badge="hijo" />
+                            <RenderNode tipo="componente" nombre="TechBadge" badge="hijo" />
+                        </div>
                     </div>
+
+                    {/* RAMA ARQUITECTURA */}
+                    <div className="arbol-rama">
+                        <RenderNode tipo="vista" nombre="Arquitectura" badge="vista" />
+                        <div className="arbol-hijos">
+                            <RenderNode tipo="componente" nombre="RenderNode" badge="hijo" />
+                        </div>
+                    </div>
+
+                    {/* RAMA BITÁCORA */}
+                    <div className="arbol-rama">
+                        <RenderNode tipo="vista" nombre="Bitácora" badge="vista" />
+                    </div>
+
                 </div>
 
             </div>
