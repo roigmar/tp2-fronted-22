@@ -94,10 +94,10 @@ const integrantes = [
             { nombre: 'Node.js', nivel: 50 },
         ],
         proyectos: [
-            { id: 1, titulo: 'Proyecto 1', descripcion: 'Descripción', imagen: proyectoMar1, link: '#' },
-            { id: 2, titulo: 'Proyecto 2', descripcion: 'Descripción', imagen: proyectoMar2, link: '#' },
-            { id: 3, titulo: 'Proyecto 3', descripcion: 'Descripción', imagen: proyectoMar3, link: '#' },
-            { id: 4, titulo: 'Proyecto 4', descripcion: 'Descripción', imagen: proyectoMar4, link: '#' },
+            { id: 1, titulo: 'Task Manager', descripcion: 'Una aplicación web de tareas construida con Flask y SQLite. Task Manager permite crear, listar, completar y eliminar tareas desde una interfaz sencilla y responsive. Principales características: registro e inicio de sesión de usuarios, creación de tareas con título, descripción y prioridad, visualización de tareas pendientes y completadas, tareas completadas se muestran al final de la lista, diseño móvil-friendly con una paleta de colores moderna.', imagen: proyectoMar1, link: '#' },
+            { id: 2, titulo: 'Mobile App', descripcion: 'Aplicación desarrollada para la materia "Desarrollo de Aplicaciones Móviles". Los requisitoseran: iniciar sesión en la aplicación como administrador, registrar clientes, pagar cuotas y actividades, y consultar las fechas de vencimiento diarias. Se maquetó en Figma y se desarrolló en Android Studio utilizando Kotlin y XML', imagen: proyectoMar2, link: '#' },
+            { id: 3, titulo: 'Desktop App - Inglés', descripcion: 'Aplicación de escritorio personalizada, diseñada para un profesor de inglés sobre la base de un ejercicio. Los requerimientos del sistema fueron, por un lado, gestionar un crud para categorías semánticas y dentro de ellas para palabras o frases y por el otro, generar una                            visualización random y no repetitiva de esas palabras una vez seleccionada la categoría. La aplicación se desarrolló en C# con Visual Studio utilizando Windows Forms.', imagen: proyectoMar3, link: '#' },
+            { id: 4, titulo: 'Portfolio personal', descripcion: 'Desarrollo de un portafolio personal para mostrar mis proyectos y habilidades. Desarrollado en HTML, CSS y JavaScript.', imagen: proyectoMar4, link: '#' },
         ],
         techStack: ['HTML', 'CSS', 'JavaScript', 'React', 'Git', 'Python', 'Kotlin', 'Figma', 'MySQL', 'Node.js']
     }

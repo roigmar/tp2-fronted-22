@@ -56,7 +56,7 @@ const Galeria = () => {
                 onClose={cerrarLightbox}
                 onPrev={prevImage}
                 onNext={nextImage}
-                imageSrc={`/src/assets/capitales/${capitalesData[indiceActual].imagen}`}
+                imageSrc={`/capitales/${capitalesData[indiceActual].imagen}`}
                 title={capitalesData[indiceActual].nombre}
                 subtitle={`${capitalesData[indiceActual].pais} - ${capitalesData[indiceActual].fecha}`}
             />
