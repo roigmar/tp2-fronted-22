@@ -1,0 +1,32 @@
+/* ===== TECH STACK ===== */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.tech-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, var(--dorado), var(--dorado-claro));
+    color: var(--negro-elegante);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: default;
+}
+
+.tech-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.tech-badge:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 15px rgba(212, 175, 55, 0.4);
+}
