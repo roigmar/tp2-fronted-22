@@ -39,7 +39,7 @@ const Galeria = () => {
                         onClick={() => abrirLightbox(index)}
                     >
                         <img 
-                            src={`/src/assets/capitales/${capital.imagen}`} 
+                            src={`/capitales/${capital.imagen}`} 
                             alt={capital.nombre} 
                             loading="lazy"
                         />
