@@ -9,9 +9,9 @@
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
     color: var(--dorado);
-    letter-spacing: 3px;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
 }
 
 .explorador-subtitulo {

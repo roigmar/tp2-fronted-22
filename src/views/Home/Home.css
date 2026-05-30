@@ -8,18 +8,19 @@
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
     color: var(--dorado);
-    letter-spacing: 3px;
-    margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
 }
 
 .home-subtitulo {
     font-family: 'Raleway', sans-serif;
-    color: var(--texto-oscuro);
-    font-size: 1rem;
-    letter-spacing: 2px;
+    text-align: center;
+    letter-spacing: 3px;
     text-transform: uppercase;
-    margin-bottom: 50px;
-    opacity: 0.7;
+    color: var(--texto-oscuro);
+    opacity: 0.6;
+    margin-bottom: 40px;
 }
 
 /* ===== GRID ===== */
