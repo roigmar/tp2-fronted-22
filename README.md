@@ -23,7 +23,7 @@ BAM GLAM es una Single Page Application (SPA) desarrollada con React y Vite, que
 
 ## Tecnologías Utilizadas
 
-- **React 18** — biblioteca principal de UI
+- **React 19** — biblioteca principal de UI
 - **Vite** — bundler y servidor de desarrollo
 - **React Router DOM** — navegación entre vistas
 - **CSS3** — estilos con variables, gradientes y animaciones
@@ -61,7 +61,7 @@ src/
 │   └── Perfil/             # Perfil individual genérico
 ├── App.jsx                 # Configuración de rutas
 ├── main.jsx                # Punto de entrada
-└── index.css               # Variables globales, tipografías y reset
+└── App.css                 # Variables globales, tipografías y reset
 ```
 
 ---
@@ -164,4 +164,5 @@ Diagrama visual de la arquitectura de componentes con código HTML/CSS puro, org
 
 ## Deploy
 
-🔗 [Ver proyecto en Vercel](#) <!-- reemplazá con el link real -->
+🔗 [Ver proyecto en Vercel](#) 
+https://tp2-frontend-22.vercel.app/
