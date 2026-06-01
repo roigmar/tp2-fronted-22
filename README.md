@@ -1,13 +1,13 @@
 # ✦ BAM GLAM ✦
 
 > Proyecto React en Equipo — TP2 Tecnicatura en Desarrollo Web  
-> 🔗 [Deploy en Vercel](#) <!-- reemplazá con el link real -->
+> 🔗 Deploy en Vercel: https://tp2-frontend-22.vercel.app/
 
 ---
 
 ## Descripción
 
-BAM GLAM es una Single Page Application (SPA) desarrollada con React y Vite, que representa la evolución del Trabajo Práctico 1 (HTML/CSS/JS) hacia una arquitectura de componentes. La aplicación presenta al equipo de desarrollo a través de un dashboard con estética glamorosa, incluyendo perfiles individuales, un explorador de datos interactivo, consumo de API externa, galería de imágenes y documentación del proceso de desarrollo.
+BAM GLAM es una Single Page Application (SPA) desarrollada con React y Vite para presentar el trabajo práctico del equipo con una interfaz de dashboard glamorosa. La aplicación incluye perfiles individuales, un explorador de zapatos con filtros en tiempo real, consumo de API externa, galería de capitales con lightbox, y se documenta el proceso de desarrollo con bitácora y arquitectura de componentes.
 
 ---
 
@@ -15,9 +15,9 @@ BAM GLAM es una Single Page Application (SPA) desarrollada con React y Vite, que
 
 | Nombre | GitHub |
 |---|---|
-| Andrea Durán | [@andrea](#) |
-| Beatriz Gonzalez | [@beatriz](#) |
-| Marcela Roig | [@roigmar](https://github.com/roigmar) |
+| Andrea Durán | [andreaduran1](https://github.com/andreaduran1) |
+| Beatriz González | [Link pendiente](#) |
+| Marcela Roig | [roigmar](https://github.com/roigmar) |
 
 ---
 
@@ -35,33 +35,42 @@ BAM GLAM es una Single Page Application (SPA) desarrollada con React y Vite, que
 ## Estructura de Archivos
 
 ```
+public/ 
+├── capitales/              # Imágenes de la galería
+├── shoes/                  # Imágenes del explorador de zapatos
 src/
-├── assets/
-│   ├── capitales/          # Imágenes de la galería
+├── assets/     
 │   ├── proyectosAndrea/    # Capturas de proyectos de Andrea
 │   ├── proyectosBeatriz/   # Capturas de proyectos de Beatriz
 │   ├── proyectosMarcela/   # Capturas de proyectos de Marcela
-│   ├── shoes/              # Imágenes del explorador de zapatos
-│   └── *.png / *.jpeg      # Avatares y logos
+│   ├── avatar-*.png        # Avatares de las integrantes
+│   └── logo-GlamSF.png     # Logo principal del proyecto
 ├── components/
 │   ├── Button/             # Componente botón reutilizable
-│   ├── Layout/             # Estructura general con splash screen
-│   ├── ProductCard/        # Cards del dashboard home
-│   └── Sidebar/            # Navegación lateral fija
+│   ├── Carrusel/           # Carrusel de proyectos
+│   ├── Layout/             # Contenedor general y splash screen
+│   ├── Lightbox/           # Modal de galería con navegación
+│   ├── ProductCard/        # Cards de producto y API
+│   ├── RenderNode/         # Nodo del árbol de componentes
+│   ├── Sidebar/            # Navegación lateral fija
+│   ├── SkillBar/           # Barras de habilidad animadas
+│   └── TechBadge/          # Badges de tecnologías
 ├── data/
-│   ├── integrantes.js      # Datos del equipo (habilidades, proyectos, redes)
-│   ├── zapatos.json        # 20 objetos para el explorador
-│   └── capitales.json      # Datos de capitales para la galería
+│   ├── integrantes.js      # Datos del equipo, proyectos y tech stack
+│   ├── zapatos.json        # Datos del explorador de zapatos
+│   ├── capitales.json      # Datos de la galería de capitales
+│   └── hitos.json          # Bitácora de desarrollo
 ├── views/
-│   ├── Api/                # Consumo de API externa con paginación
-│   ├── Arquitectura/       # Árbol de renderizado visual
-│   ├── Explorador/         # Armario de zapatos con buscador y filtros
-│   ├── Galeria/            # Galería con lightbox
-│   ├── Home/               # Dashboard con grilla de integrantes
-│   └── Perfil/             # Perfil individual genérico
-├── App.jsx                 # Configuración de rutas
-├── main.jsx                # Punto de entrada
-└── App.css                 # Variables globales, tipografías y reset
+│   ├── Api/                # Consumo de API pública y paginación
+│   ├── Arquitectura/       # Diagrama visual del árbol de componentes
+│   ├── Explorador/         # Vista de filtro y búsqueda de zapatos
+│   ├── Galeria/            # Vista de fotos con lightbox interactivo
+│   ├── Home/               # Dashboard de integrantes
+│   ├── Perfil/             # Perfil individual por integrante
+│   └── Bitacora/           # Registro de hitos del proyecto
+├── App.jsx                 # Configuración de rutas con React Router
+├── main.jsx                # Punto de entrada y renderizado
+└── App.css                 # Variables globales, import de fuentes y reset
 ```
 
 ---
@@ -90,36 +99,46 @@ src/
 
 ### Iconografía
 
-No se utilizó librería de íconos externa — los elementos visuales se resolvieron con CSS, gradientes y efectos de sombra.
+No se utilizó librería de íconos externa — los elementos visuales y los controles se resolvieron con Unicode, CSS y gradientes.
 
 ---
 
-## Funcionalidades Dinámicas y Componentes Clave
+## JavaScript / React
 
 ### Splash Screen Animado
 Al cargar la aplicación se muestra un splash screen con el logo BAM GLAM sobre fondo champagne, con efecto de brillo y fade out suave implementado con `useEffect` y `useState`.
+![logo](public/screenshots/logo-splash.png)
 
 ### Dashboard Home
 Grilla de tres cards de integrantes con animación `fadeInUp` escalonada. Al hacer click en una card navega al perfil individual usando `useNavigate`.
+![dashboard](public/screenshots/dashboard.png)
+![dashboard-FadInUp](public/screenshots/fadeInUp.png)
 
 ### Perfil Individual Genérico
 Un único componente `Perfil.jsx` que usa `useParams()` para leer la URL y cargar los datos del integrante correspondiente desde `integrantes.js`. Incluye:
 - Barras de progreso animadas con CSS custom properties (`--nivel`)
 - Carrusel de proyectos con controles manuales y puntitos indicadores
 - Tech Stack con badges interactivos
+![perfilSuperior](public/screenshots/perfil1.png)
+![PerfilInferior](public/screenshots/perfil2.png)
 
 ### Explorador de Zapatos
 Renderización dinámica de `zapatos.json` con 20 objetos. Incluye buscador por nombre, marca o color en tiempo real y filtros por categoría implementados con `useState` y `.filter()`.
+![explorador](public/screenshots/explorador.png)
 
 ### API Externa
 Consumo asíncrono con manejo de estados de carga y error, y sistema de paginación Anterior/Siguiente con indicador de posición.
+![cargaApi](public/screenshots/cargaApi.png)
+![ConsumoApi](public/screenshots/api.png)
 
 ### Galería de Capitales
 Grid de imágenes con Lightbox integrado — zoom, navegación interna y cierre con tecla ESC.
+![galeria](public/screenshots/galeria.png)
+![galeriaDetalle](public/screenshots/galeria-detalle.png)
 
 ### Árbol de Renderizado
-Diagrama visual de la arquitectura de componentes con código HTML/CSS puro, organizado por niveles y codificado por colores según el tipo de nodo (raíz, vista, componente, data).
-
+Diagrama visual de la arquitectura de componentes con código HTML/CSS puro, organizado por niveles y codificado por colores según el tipo de nodo (raíz, vista, componente, dato).
+![arbolRenderizado](public/screenshots/arbol.png)
 ---
 
 ## Uso de Inteligencia Artificial
@@ -164,5 +183,4 @@ Diagrama visual de la arquitectura de componentes con código HTML/CSS puro, org
 
 ## Deploy
 
-🔗 [Ver proyecto en Vercel](#) 
-https://tp2-frontend-22.vercel.app/
+🔗 [Ver proyecto en Vercel](https://tp2-frontend-22.vercel.app/) 

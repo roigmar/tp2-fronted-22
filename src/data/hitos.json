@@ -1,44 +1,62 @@
 [
   {
     "id": 1,
-    "fecha": "10/05/26",
-    "subtitulo": "Creación proyecto Vite + React",
-    "descripcion": "Este paso inicial representó la fundación técnica del proyecto. El equipo estableció las bases para transformar el trabajo práctico anterior en una moderna Single Page Application (SPA) utilizando Vite como servidor de desarrollo y empaquetador."
+    "fecha": "10/05/2026",
+    "subtitulo": "Inicio del proyecto (Vite + React)",
+    "descripcion": "Se inicializó el repositorio con Vite y configuración base de React. Se creó la estructura inicial y se definieron las dependencias principales para el desarrollo de la SPA."
   },
   {
     "id": 2,
-    "fecha": "27/05/26",
-    "subtitulo": "add: refactorizacion de arquitectura",
-    "descripcion": "Migración completa a una arquitectura de componentes reutilizables. El index.html fue adaptado para actuar como el único punto de entrada de la aplicación, donde React inyecta y gestiona las vistas de forma dinámica."
+    "fecha": "12/05/2026",
+    "subtitulo": "Refactorización a arquitectura de componentes",
+    "descripcion": "Migración del código estático a componentes React reutilizables. Se estandarizó la estructura `src/components`, `src/views` y `src/data` y se configuró React Router para la navegación interna."
   },
   {
     "id": 3,
-    "fecha": "28/05/26",
-    "subtitulo": "creación de arquitectura",
-    "descripcion": "Actualización de los archivos package.json y package-lock.json consolidando la instalación de las librerías principales, incluyendo React 18 y React Router DOM para la navegación sin recargar la página."
+    "fecha": "16/05/2026",
+    "subtitulo": "Rediseño visual y guía de estilos",
+    "descripcion": "Se definió la paleta BAM GLAM y las tipografías (Playfair Display, Raleway). Se implementaron variables CSS en `App.css` y se aplicaron gradientes y sombras para la identidad visual del proyecto."
   },
   {
     "id": 4,
-    "fecha": "28/05/26",
-    "subtitulo": "recursos galeria",
-    "descripcion": "Modificación en el archivo check-list.md organizando las tareas de los recursos para la 'Galería de Capitales'. Esta sección utiliza imágenes generadas por IA e incluye un componente Lightbox integrado."
+    "fecha": "19/05/2026",
+    "subtitulo": "Layout, Sidebar y Splash Screen",
+    "descripcion": "Se implementó `Layout` con `Sidebar` navegable y splash screen animado al inicio. Se añadió botón hamburguesa para mobile y control de apertura/cierre del sidebar."
   },
   {
     "id": 5,
-    "fecha": "30/05/26",
-    "subtitulo": "Update README.md",
-    "descripcion": "Redacción y actualización de la documentación principal del repositorio. Detalla la paleta de colores, tipografías, presentación del equipo y el registro del uso de IA (Claude e Ideogram) como asistentes."
+     "fecha": "21/05/2026",
+    "subtitulo": "Perfil individual y componentes interactivos",
+    "descripcion": "Creación del componente `Perfil` que carga datos desde `integrantes.js`, incluye barras de habilidad animadas (`SkillBar`), carrusel de proyectos (`Carrusel`) y `TechBadge` para tech stack."
   },
   {
     "id": 6,
-    "fecha": "30/05/26",
-    "subtitulo": "ajuste capitales",
-    "descripcion": "Correcciones finales y mejoras visuales/funcionales a la Galería de Capitales aplicadas en las carpetas src y public, ajustando el componente que renderiza las imágenes en el Lightbox."
+    "fecha": "23/05/2026",
+    "subtitulo": "Explorador de datos (JSON local)",
+    "descripcion": "Creación de `zapatos.json` con 20 objetos y la vista `Explorador` que implementa búsqueda en tiempo real y filtros por categoría. Se creó `ProductCard` para renderizar cada ítem."
   },
   {
     "id": 7,
-    "fecha": "31/05/26",
-    "subtitulo": "Ajuste hitos",
-    "descripcion": "Incorporación de la Bitácora, indicando los pasos que se siguieron durante el desarrollo del proyecto. Utilización de ventana pop-up para mostrar los hitos de forma interactiva, con un diseño que resalta la información clave de cada etapa. El archivo src/data/hitos.json se creó para almacenar los hitos de manera estructurada, facilitando su mantenimiento y actualización. Se actualizó la vista de Arquitectura para incluir un nodo que representa este nuevo recurso, integrándolo visualmente en la estructura del proyecto. "
-  }  
+    "fecha": "24/05/2026",
+    "subtitulo": "Integración API pública y paginación",
+    "descripcion": "Vista `Api` que consume la Makeup API de forma asíncrona, con estados de carga y error, y un sistema de paginación Anterior/Siguiente junto a indicador de página actual."
+  },
+  {
+    "id": 8,
+    "fecha": "27/05/2026",
+    "subtitulo": "Galería de capitales + Lightbox",
+    "descripcion": "Implementación de la galería con grid de imágenes (assets/public), componente `Lightbox` con navegación por flechas, control por teclado (ESC para cerrar, flechas para navegar) y bloqueo de scroll mientras está abierto."
+  },
+  {
+    "id": 9,
+    "fecha": "30/05/2026",
+    "subtitulo": "Bitácora de desarrollo",
+    "descripcion": "Creación de la vista `Bitacora` que muestra los hitos del proyecto con diseño atractivo, utilizando datos de `hitos.json` y aplicando estilos coherentes con la identidad visual."
+  },  
+  {
+    "id": 10,
+    "fecha": "31/06/2026",
+    "subtitulo": "Documentación y README actualizado",
+    "descripcion": "Se completó el `README.md` con título, descripción, integrantes, tecnologías, estructura de archivos, guía de estilos, funcionalidades clave, capturas y link de deploy en Vercel."
+  }
 ]
