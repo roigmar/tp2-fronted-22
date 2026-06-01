@@ -10,7 +10,7 @@ import proyectoAn1 from '../assets/proyectosAndrea/DAM.png'
 import proyectoAn2 from '../assets/proyectosAndrea/SePrice.png'
 import proyectoAn3 from '../assets/proyectosAndrea/Porfolio.PNG'
 import proyectoAn4 from '../assets/proyectosAndrea/AforoTag.PNG'
-import Prezi from '../assets/proyectosBeatriz/Prezi.png'
+import prezi from '../assets/proyectosBeatriz/Prezi.png'
 import bigdata from '../assets/proyectosBeatriz/BigData.png'
 import uxui from '../assets/proyectosBeatriz/UXUI.png'  
 
@@ -75,7 +75,7 @@ const integrantes = [
             { nombre: 'CICS', nivel: 85 },
         ],
         proyectos: [
-            { id: 1, titulo: 'Prezi', descripcion: 'Presentación de desarrollo del software y el mundo laboral', imagen: Prezi, link: '#' },
+            { id: 1, titulo: 'Prezi', descripcion: 'Presentación de desarrollo del software y el mundo laboral', imagen: prezi, link: '#' },
             { id: 2, titulo: 'Big-Data', descripcion: 'Análisis de datos presentación en Looker Studio', imagen: bigdata, link: '#' },
             { id: 3, titulo: 'UX-UI', descripcion: 'Ideación de una actividad comercial innovadora, generación de prototipos y Marca', imagen: uxui, link: '#' },
         ],
