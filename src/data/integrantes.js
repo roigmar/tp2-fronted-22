@@ -10,9 +10,9 @@ import proyectoAn1 from '../assets/proyectosAndrea/DAM.png'
 import proyectoAn2 from '../assets/proyectosAndrea/SePrice.png'
 import proyectoAn3 from '../assets/proyectosAndrea/Porfolio.PNG'
 import proyectoAn4 from '../assets/proyectosAndrea/AforoTag.PNG'
-import prezi from '../assets/proyectosBeatriz/Prezi.png'
-import bigdata from '../assets/proyectosBeatriz/BigData.png'
-import uxui from '../assets/proyectosBeatriz/UXUI.png'  
+import prezi from '../assets/proyectosBeatriz/prezi.png'
+import bigdata from '../assets/proyectosBeatriz/bigdata.png'
+import uxui from '../assets/proyectosBeatriz/uxui.png'  
 
 const integrantes = [
     {
