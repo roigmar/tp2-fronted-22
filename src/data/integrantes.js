@@ -10,6 +10,9 @@ import proyectoAn1 from '../assets/proyectosAndrea/DAM.png'
 import proyectoAn2 from '../assets/proyectosAndrea/SePrice.png'
 import proyectoAn3 from '../assets/proyectosAndrea/Porfolio.PNG'
 import proyectoAn4 from '../assets/proyectosAndrea/AforoTag.PNG'
+import prezi from '../assets/proyectosBeatriz/prezi.png'
+import bigdata from '../assets/proyectosBeatriz/bigdata.png'
+import uxui from '../assets/proyectosBeatriz/uxui.png'  
 
 const integrantes = [
     {
@@ -48,27 +51,35 @@ const integrantes = [
     },
     {
         id: 2,
-        nombre: "Beatriz Gonzalez",
+        nombre: "Beatriz González",
         avatar: beatriz,
         ruta: "/beatriz",
         rol: "Desarrolladora Web",
         redes: {
             github: "#",
-            linkedin: "#"
+            linkedin: "https://linkedin.com"
         },
         habilidades: [
             { nombre: 'HTML', nivel: 80 },
             { nombre: 'CSS', nivel: 75 },
             { nombre: 'JavaScript', nivel: 70 },
+            { nombre: 'Python', nivel: 70 },
+            { nombre: 'MySQL', nivel: 60 },
+            { nombre: 'Figma', nivel: 75 },
+            { nombre: 'Looker Studio', nivel: 75 },
+            { nombre: 'Prezi', nivel: 75 },
+            { nombre: 'Trello', nivel: 70 },
             { nombre: 'React', nivel: 50 },
             { nombre: 'Git', nivel: 65 },
+            { nombre: 'Cobol', nivel: 85 },
+            { nombre: 'CICS', nivel: 85 },
         ],
         proyectos: [
-            { id: 1, titulo: 'Proyecto 1', descripcion: 'Descripción', imagen: null, link: '#' },
-            { id: 2, titulo: 'Proyecto 2', descripcion: 'Descripción', imagen: null, link: '#' },
-            { id: 3, titulo: 'Proyecto 3', descripcion: 'Descripción', imagen: null, link: '#' },
+            { id: 1, titulo: 'Prezi', descripcion: 'Presentación de desarrollo del software y el mundo laboral', imagen: prezi, link: '#' },
+            { id: 2, titulo: 'Big-Data', descripcion: 'Análisis de datos presentación en Looker Studio', imagen: bigdata, link: '#' },
+            { id: 3, titulo: 'UX-UI', descripcion: 'Ideación de una actividad comercial innovadora, generación de prototipos y Marca', imagen: uxui, link: '#' },
         ],
-        techStack: ['HTML', 'CSS', 'JavaScript', 'React', 'Git']
+        techStack: ['HTML', 'CSS', 'JavaScript', 'React', 'Git', 'Python', 'MySQL', 'Figma', 'Looker Studio', 'Trello']
     },
     {
         id: 3,

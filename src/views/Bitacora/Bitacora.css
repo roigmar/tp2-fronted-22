@@ -1,0 +1,104 @@
+/* ===== CONTENEDOR BITACORA ===== */
+.bitacora-section {
+  padding: 2rem;
+  background-color: var(--blanco-perla, #FAF8FF);
+  color: var(--negro-elegante, #1A1A2E);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bitacora-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.bitacora-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: var(--dorado);
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+
+.bitacora-subtitle {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--texto-oscuro);
+    opacity: 0.6;
+    margin-bottom: 40px;
+}
+
+.bitacora-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 700px;
+  width: 100%;
+}
+
+/* 
+  Contenedor visible y redondeado 
+  Se usa position: relative para que la ventana absoluta se ancle a este div
+*/
+.hito-container {
+  position: relative; 
+  background-color: var(--champagne, #F7E7CE);
+  border: 2px solid var(--dorado-claro, #D4AF37);
+  border-radius: 30px; /* Esquinas fuertemente redondeadas */
+  padding: 1rem 2rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hito-container:hover {
+  background-color: var(--nude, #E8C9A0);
+  border-color: var(--rosa-fuerte, #E91E8C);
+  transform: scale(1.02);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.18);
+}
+
+.hito-texto {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1rem;
+  color: var(--negro-elegante, #1A1A2E);
+}
+
+/* 
+  Diseño de la ventana pop-up 
+*/
+.hito-popup {
+  position: absolute;
+  bottom: 130%; /* La posiciona justo arriba del contenedor redondeado */
+  left: 50%;
+  transform: translateX(-50%); /* Centra el pop-up de forma precisa */
+  width: 320px;
+  background-color: rgba(26, 26, 46, 0.95); /* --negro-elegante con opacidad */
+  color: var(--blanco-perla, #FAF8FF);
+  padding: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: left;
+  z-index: 100;
+  pointer-events: none; /* Evita que el pop-up interfiera con el mouse al desaparecer/aparecer */
+  
+  /* Se mantiene oculta mediante opacidad y visibilidad */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* 
+  Efecto Hover: Cuando el usuario pasa el mouse sobre el contenedor, 
+  el pop-up se hace visible 
+*/
+.hito-container:hover .hito-popup {
+  opacity: 1;
+  visibility: visible;
+}
