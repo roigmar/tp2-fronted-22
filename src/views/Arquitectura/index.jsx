@@ -96,6 +96,10 @@ const Arquitectura = () => {
                     {/* RAMA BITÁCORA */}
                     <div className="arbol-rama">
                         <RenderNode tipo="vista" nombre="Bitácora" badge="vista" />
+                        <div className="arbol-hijos">
+                            <RenderNode tipo="dato" nombre="hitos.json" badge="data" />
+                            <RenderNode tipo="componente" nombre="Lightbox" badge="hijo" />
+                        </div>  
                     </div>
 
                 </div>

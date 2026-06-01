@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "fecha": "10/05/26",
+    "subtitulo": "Creación proyecto Vite + React",
+    "descripcion": "Este paso inicial representó la fundación técnica del proyecto. El equipo estableció las bases para transformar el trabajo práctico anterior en una moderna Single Page Application (SPA) utilizando Vite como servidor de desarrollo y empaquetador."
+  },
+  {
+    "id": 2,
+    "fecha": "27/05/26",
+    "subtitulo": "add: refactorizacion de arquitectura",
+    "descripcion": "Migración completa a una arquitectura de componentes reutilizables. El index.html fue adaptado para actuar como el único punto de entrada de la aplicación, donde React inyecta y gestiona las vistas de forma dinámica."
+  },
+  {
+    "id": 3,
+    "fecha": "28/05/26",
+    "subtitulo": "creación de arquitectura",
+    "descripcion": "Actualización de los archivos package.json y package-lock.json consolidando la instalación de las librerías principales, incluyendo React 18 y React Router DOM para la navegación sin recargar la página."
+  },
+  {
+    "id": 4,
+    "fecha": "28/05/26",
+    "subtitulo": "recursos galeria",
+    "descripcion": "Modificación en el archivo check-list.md organizando las tareas de los recursos para la 'Galería de Capitales'. Esta sección utiliza imágenes generadas por IA e incluye un componente Lightbox integrado."
+  },
+  {
+    "id": 5,
+    "fecha": "30/05/26",
+    "subtitulo": "Update README.md",
+    "descripcion": "Redacción y actualización de la documentación principal del repositorio. Detalla la paleta de colores, tipografías, presentación del equipo y el registro del uso de IA (Claude e Ideogram) como asistentes."
+  },
+  {
+    "id": 6,
+    "fecha": "30/05/26",
+    "subtitulo": "ajuste capitales",
+    "descripcion": "Correcciones finales y mejoras visuales/funcionales a la Galería de Capitales aplicadas en las carpetas src y public, ajustando el componente que renderiza las imágenes en el Lightbox."
+  },
+  {
+    "id": 7,
+    "fecha": "31/05/26",
+    "subtitulo": "Ajuste hitos",
+    "descripcion": "Incorporación de la Bitácora, indicando los pasos que se siguieron durante el desarrollo del proyecto. Utilización de ventana pop-up para mostrar los hitos de forma interactiva, con un diseño que resalta la información clave de cada etapa. El archivo src/data/hitos.json se creó para almacenar los hitos de manera estructurada, facilitando su mantenimiento y actualización. Se actualizó la vista de Arquitectura para incluir un nodo que representa este nuevo recurso, integrándolo visualmente en la estructura del proyecto. "
+  }  
+]
