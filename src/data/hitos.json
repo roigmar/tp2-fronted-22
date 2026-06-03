@@ -55,7 +55,7 @@
   },  
   {
     "id": 10,
-    "fecha": "31/06/2026",
+    "fecha": "31/05/2026",
     "subtitulo": "Documentación y README actualizado",
     "descripcion": "Se completó el `README.md` con título, descripción, integrantes, tecnologías, estructura de archivos, guía de estilos, funcionalidades clave, capturas y link de deploy en Vercel."
   }
