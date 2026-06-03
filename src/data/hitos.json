@@ -25,7 +25,7 @@
   },
   {
     "id": 5,
-     "fecha": "21/05/2026",
+    "fecha": "21/05/2026",
     "subtitulo": "Perfil individual y componentes interactivos",
     "descripcion": "Creación del componente `Perfil` que carga datos desde `integrantes.js`, incluye barras de habilidad animadas (`SkillBar`), carrusel de proyectos (`Carrusel`) y `TechBadge` para tech stack."
   },
@@ -58,5 +58,11 @@
     "fecha": "31/05/2026",
     "subtitulo": "Documentación y README actualizado",
     "descripcion": "Se completó el `README.md` con título, descripción, integrantes, tecnologías, estructura de archivos, guía de estilos, funcionalidades clave, capturas y link de deploy en Vercel."
+  },
+  {
+    "id": 11,
+    "fecha": "03/06/2026",
+    "subtitulo": "Refactorización y ajustes en responsive",
+    "descripcion": "Se rediseñó la vista Arquitectura implementando un árbol de renderizado vertical responsivo para dispositivos móviles. Además, se refactorizaron Arquitectura y Bitácora para extraer lógicas repetitivas en componentes reutilizables (HitoItem) y estructuras de datos dinámicas (estructuraApp.js)."
   }
 ]

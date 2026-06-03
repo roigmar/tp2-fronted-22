@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import hitosData from '../../data/hitos.json';
 import Lightbox from '../../components/Lightbox';
+import HitoItem from '../../components/HitoItem';
 import './Bitacora.css';
 
 const Bitacora = () => {
@@ -17,9 +18,9 @@ const Bitacora = () => {
     <section className="bitacora-section">
       <header className="bitacora-header">
         <h1 className="bitacora-title">✦ Bitácora ✦</h1>
-        <p className="bitacora-description">
-          Este proyecto consiste en la migración del Trabajo Práctico 1 desarrollado con HTML, CSS y JavaScript a una aplicación React basada en componentes. El trabajo fue realizado por un equipo de 3 integrantes, Andrea, Beatriz y Marcela, utilizando GitHub para el control de versiones y Trello para la gestión de tareas.
-        </p>        
+        <div className="bitacora-description">
+          Este proyecto expone la evolución arquitectónica desde una estructura estática (HTML, CSS y JS puro) hacia una Single Page Application (SPA) utilizando React. Esta transición se fundamenta en la necesidad de escalabilidad, el mantenimiento eficiente a través de la componentización modular, y la mejora sustancial en la experiencia del usuario (UX) gracias al enrutamiento dinámico sin recargas de página.
+        </div>        
       </header>
 
       <hr className="linea-horizontal"></hr>
@@ -27,15 +28,17 @@ const Bitacora = () => {
       <p className="bitacora-subtitle">Roles</p>
       <div className="bitacora-container">        
         <ul className="bitacora-roles-list">
-          <li>Andrea: Desarrollo del componente Lightbox, integración de la funcionalidad de apertura y cierre, y diseño de la interfaz de usuario. Consumo de API  </li>
-          <li>Beatriz: Gestión del proyecto en Trello, implementación de la estructura de la bitácora y diseño del estilo CSS de bitácora.</li>
-          <li>Marcela: Migración del contenido HTML a componentes React, control de versiones en GitHub, y desarrollo de sección explorador.</li>
+          <li><strong>Andrea:</strong> Encargada de la refactorización modular del proyecto en componentes y vistas aisladas, y desarrollo de la lógica asíncrona para el consumo de la API REST.</li>
+          <li><strong>Beatriz:</strong> Lideró la organización de tareas, estructuró la vista de la bitácora y estableció las bases del diseño CSS responsivo.</li>
+          <li><strong>Marcela:</strong> Responsable de la migración del contenido estático, rediseño integral de la interfaz de usuario, y desarrollo de la lógica de filtrado en el explorador.</li>
         </ul>
       </div>
+
       <hr className="linea-horizontal"></hr>
+
       <p className="bitacora-subtitle">Flujo de Trabajo</p>
       <div className="bitacora-container">        
-        Se utilizó GitHub para el control de versiones, con una rama principal `main` y una rama secundaria para el desarrollo de la propuesta visual. El equipo trabajó de manera colaborativa, realizando commits frecuentes con mensajes descriptivos y utilizando pull requests para revisar y fusionar cambios. Trello se empleó para organizar las tareas, asignar responsabilidades y seguir el progreso del proyecto, asegurando una comunicación fluida entre los integrantes.
+        El ciclo de desarrollo se gestionó combinando metodologías ágiles. Se utilizó <strong>Trello</strong> como tablero Kanban para la planificación, priorización y asignación de tickets. En cuanto al control de versiones en <strong>GitHub</strong>, el equipo adoptó un enfoque directo y centralizado: todas las integrantes trabajaron haciendo push directamente a la rama <code>main</code>. No se utilizaron ramas secundarias ni Pull Requests, integrando los cambios de forma continua y sincrónica sobre la base principal del código.
       </div>
 
       <hr className="linea-horizontal"></hr>
@@ -43,20 +46,7 @@ const Bitacora = () => {
       <p className="bitacora-subtitle">Hitos del Desarrollo</p>
       <div className="bitacora-list-container">
         {hitosData.map((hito, index) => (
-          /* Contenedor principal del hito */
-          <article key={index} className="hito-container">
-
-            {/* Texto visible: Hito # - dd/mm/aa: Subtítulo */}
-            <span className="hito-texto">
-              <strong>Hito {index + 1}</strong> - {hito.fecha}: {hito.subtitulo}
-            </span>
-
-            {/* Ventana pop-up con la descripción (oculta por defecto) */}
-            <div className="hito-popup">
-              <p>{hito.descripcion}</p>
-            </div>
-
-          </article>
+          <HitoItem key={index} hito={hito} index={index} />
         ))}
       </div>
     </section>

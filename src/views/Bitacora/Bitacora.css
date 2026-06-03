@@ -25,7 +25,6 @@
     letter-spacing: 3px;
     color: var(--texto-oscuro);
     opacity: 0.6;
-   
 }
 
 .bitacora-subtitle {
@@ -65,14 +64,13 @@
 }
 
 /* 
-  Contenedor visible y redondeado 
   Se usa position: relative para que la ventana absoluta se ancle a este div
 */
 .hito-container {
   position: relative; 
   background-color: var(--nude, #F7E7CE);
   border: 2px solid var(--dorado-claro, #D4AF37);
-  border-radius: 30px; /* Esquinas fuertemente redondeadas */
+  border-radius: 30px; 
   padding: 1rem 2rem;
   cursor: pointer;
   text-align: center;
@@ -101,7 +99,7 @@
   left: 50%;
   transform: translateX(-50%); /* Centra el pop-up de forma precisa */
   width: 320px;
-  background-color: rgba(26, 26, 46, 0.95); /* --negro-elegante con opacidad */
+  background-color: rgba(26, 26, 46, 0.95); 
   color: var(--blanco-perla, #FAF8FF);
   padding: 1.2rem;
   border-radius: 12px;
