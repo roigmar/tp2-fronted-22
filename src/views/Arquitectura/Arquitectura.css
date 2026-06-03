@@ -181,13 +181,112 @@
     border: 1px solid var(--dorado-claro);
 }
 
-/* ===== RESPONSIVE ===== */
+/* ===== VISIBILIDAD ===== */
+.arbol-mobile {
+    display: none;
+}
+.arbol-desktop {
+    display: block;
+}
+
+
 @media (max-width: 768px) {
+    .arbol-desktop {
+        display: none;
+    }
+    
+    .arbol-mobile {
+        display: block;
+        text-align: left;
+        margin-top: 30px;
+        padding-left: 10px;
+    }
+
     .arquitectura {
-        padding: 20px;
+        padding: 20px 10px;
     }
 
     .arquitectura-titulo {
         font-size: 2rem;
+    }
+    
+    /* ===== ESTILOS MOBILE ===== */
+    .tree-root, .tree-root ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .tree-root ul {
+        margin-left: 20px; /* Nivel de anidado */
+    }
+
+    .tree-root li {
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px; 
+        position: relative;
+    }
+
+    /* Línea vertical descendente */
+    .tree-root li::before {
+        content: '';
+        position: absolute;
+        top: -10px; /* Conecta con el padre / hermano anterior */
+        bottom: 0;
+        left: 0;
+        border-left: 2px solid var(--dorado);
+    }
+
+    /* El nodo principal (Raíz/App) no lleva conectores */
+    .tree-root > li {
+        padding-left: 0;
+    }
+    .tree-root > li::before,
+    .tree-root > li::after {
+        display: none !important;
+    }
+
+    /* La línea vertical del ÚLTIMO hijo se detiene a mitad de camino */
+    .tree-root li:last-child::before {
+        bottom: auto;
+        height: 45px; 
+    }
+
+    /* Línea horizontal hacia la tarjeta del nodo */
+    .tree-root li::after {
+        content: '';
+        position: absolute;
+        top: 35px; 
+        left: 0;
+        width: 20px; 
+        border-top: 2px solid var(--dorado);
+    }
+}
+
+@media (max-width: 400px) {
+    .arquitectura {
+        padding: 10px 5px;
+    }
+
+    .arquitectura-titulo {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+
+    .arquitectura-subtitulo {
+        font-size: 0.9rem;
+        margin-bottom: 25px;
+    }
+
+    .leyenda {
+        gap: 5px;
+        margin-bottom: 30px;
+    }
+
+    .leyenda-item {
+        font-size: 0.7rem;
+        padding: 5px 10px;
     }
 }
